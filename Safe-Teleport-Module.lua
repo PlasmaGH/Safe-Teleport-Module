@@ -33,7 +33,7 @@ if RunService:IsServer() then
 			attemptedTries += 1
 
 			if not success then
-				warn(([[[WARNING]: Teleport-Core | FAILED TO TELEPORT "%s", TRIES REMAINING: %s]]):format(player.Name, tostring(attemptedTries - moduleSettings.Safe_Attempts)))
+				warn(([[[WARNING]: Teleport-Core | FAILED TO TELEPORT "%s", TRIES REMAINING: %s]]):format(player.Name, tostring(moduleSettings.Safe_Attempts - attemptedTries)))
 				task.wait(moduleSettings.Retry_Delay)
 			elseif success then
 				warn(([[[WARNING]: Teleport-Core | SUCCESSFULLY TELEPORTED "%s" ON TRY "%s"]]):format(player.Name, tostring(attemptedTries)))
