@@ -7,7 +7,7 @@ A safe module for teleporting players from place to place in Roblox.
 
 ### Loading on Client:
 > To load on the client, simply load the module.
-
+(everything will be pre-setup)
 ```lua
 require(...)
 ```
