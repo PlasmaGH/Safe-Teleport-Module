@@ -12,6 +12,8 @@ A safe module for teleporting players from place to place in Roblox.
 require(...)
 ```
 
+`safeTeleport` is for server use only.
+
 ### Using on Server:
 > Teleport the player by calling the "`safeTeleport`" command.
 > Returns boolean : Teleport Success
